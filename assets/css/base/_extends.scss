@@ -1,0 +1,19 @@
+@import "functions";
+
+.form-group {
+  width: 100%;
+  padding: rem(8px) rem(15px);
+  margin: rem(8px) 0;
+  font-family: $font;
+  font-weight: 400;
+  font-size: em(10px);
+  display: block;
+  box-sizing: border-box;
+}
+
+.contact-grid-icon {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-end: span 2;
+  place-self: center;
+}

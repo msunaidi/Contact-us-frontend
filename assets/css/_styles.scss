@@ -1,0 +1,182 @@
+@import "base/variables";
+@import "base/mixins";
+@import "base/extends";
+@import "base/functions";
+
+body {
+  direction: $default-direction;
+  background-color: #d9d9d9;
+  margin: 0;
+
+  background: -webkit-radial-gradient(
+      ellipse at bottom,
+      #ffced8,
+      transparent,
+      transparent
+    ),
+    -webkit-linear-gradient(to bottom right, #cfdbe4, #f5f5f5, #dcf3ff);
+
+  background: -moz-radial-gradient(
+      ellipse at bottom,
+      #ffced8,
+      transparent,
+      transparent
+    ),
+    -moz-linear-gradient(to bottom right, #cfdbe4, #f5f5f5, #dcf3ff);
+
+  background: radial-gradient(
+      ellipse at bottom,
+      #ffced8,
+      transparent,
+      transparent
+    ),
+    linear-gradient(to bottom right, #cfdbe4, #f5f5f5, #dcf3ff);
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  width: 100%;
+  height: em(590px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 320px) {
+  .main {
+    width: 100%;
+    margin: rem(10px) rem(24px);
+    border-radius: em(50px);
+    background: linear-gradient(
+      to $opposite-float,
+      white,
+      white 75%,
+      $side-bg-color 75%,
+      $side-bg-color 75%
+    );
+    box-shadow: 0 em(120px) em(100px) em(-90px) rgb(25, 58, 75, 0.3);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main {
+    width: 100%;
+    margin: rem(60px) rem(250px);
+    border-radius: em(50px);
+    background: linear-gradient(
+      to $opposite-float,
+      white,
+      white 75%,
+      $side-bg-color 75%,
+      $side-bg-color 75%
+    );
+    box-shadow: 0 em(120px) em(100px) em(-90px) rgb(25, 58, 75, 0.3);
+  }
+}
+
+.contact-us {
+  width: 40%;
+  padding: rem(50px) rem(75px);
+  display: inline-block;
+}
+
+.contact-title {
+  margin-bottom: rem(20px);
+
+  .form-desc {
+    font-family: $font;
+    font-weight: 600;
+    font-size: em(8px);
+  }
+
+  .form-title {
+    font-size: em(28px);
+    font-family: $font;
+    font-weight: 700;
+    margin-bottom: rem(10px);
+    .colored-form-title {
+      color: $primary-color;
+    }
+  }
+}
+
+.contact-form {
+  .form-input {
+    @extend .form-group;
+    margin-bottom: rem(10px);
+    font-size: em(10px);
+    color: $placeholder-text-color;
+    border: em(1px) solid $input-border-color;
+    text-align: $default-float;
+  }
+
+  .form-btn {
+    @extend .form-group;
+    @include button($primary-color);
+  }
+}
+
+.contact-info {
+  margin-top: rem(30px);
+  @media only screen and (min-width: 320px) {
+    .email {
+      float: $opposite-float;
+      @include contact-grid-small();
+    }
+
+    .phone {
+      float: $default-float;
+      @include contact-grid-small();
+    }
+
+    .fax {
+      float: $default-float;
+      @include contact-grid-small();
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .email {
+      float: $opposite-float;
+
+      @include contact-grid();
+    }
+    .phone {
+      float: $default-float;
+      @include contact-grid();
+    }
+
+    .fax {
+      float: $default-float;
+      @include contact-grid();
+    }
+  }
+
+  .icon {
+    @extend .contact-grid-icon;
+
+    width: em(16px);
+    height: em(16px);
+  }
+
+  .title {
+    @include conatct-text(black, 600);
+    text-align: $default-float;
+  }
+  .text {
+    @include conatct-text($primary-color, 400);
+    text-align: $default-float;
+  }
+}
+
+.map {
+  float: $opposite-float;
+  margin-top: rem(50px);
+  margin-#{$opposite-float}: rem(35px);
+}
+.map-img {
+  width: em(270px);
+}

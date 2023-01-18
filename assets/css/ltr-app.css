@@ -1,0 +1,168 @@
+.form-group, .contact-form .form-btn, .contact-form .form-input {
+  width: 100%;
+  padding: 0.5rem 0.9375rem;
+  margin: 0.5rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.625em;
+  display: block;
+  box-sizing: border-box;
+}
+
+.contact-grid-icon, .contact-info .icon {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-end: span 2;
+  place-self: center;
+}
+
+body {
+  direction: ltr;
+  background-color: #d9d9d9;
+  margin: 0;
+  background: -webkit-radial-gradient(ellipse at bottom, #ffced8, transparent, transparent), -webkit-linear-gradient(to bottom right, #cfdbe4, #f5f5f5, #dcf3ff);
+  background: -moz-radial-gradient(ellipse at bottom, #ffced8, transparent, transparent), -moz-linear-gradient(to bottom right, #cfdbe4, #f5f5f5, #dcf3ff);
+  background: radial-gradient(ellipse at bottom, #ffced8, transparent, transparent), linear-gradient(to bottom right, #cfdbe4, #f5f5f5, #dcf3ff);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 100%;
+  height: 36.875em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 320px) {
+  .main {
+    width: 100%;
+    margin: 0.625rem 1.5rem;
+    border-radius: 3.125em;
+    background: linear-gradient(to right, white, white 75%, #183a4a 75%, #183a4a 75%);
+    box-shadow: 0 7.5em 6.25em -5.625em rgba(25, 58, 75, 0.3);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main {
+    width: 100%;
+    margin: 3.75rem 15.625rem;
+    border-radius: 3.125em;
+    background: linear-gradient(to right, white, white 75%, #183a4a 75%, #183a4a 75%);
+    box-shadow: 0 7.5em 6.25em -5.625em rgba(25, 58, 75, 0.3);
+  }
+}
+.contact-us {
+  width: 40%;
+  padding: 3.125rem 4.6875rem;
+  display: inline-block;
+}
+
+.contact-title {
+  margin-bottom: 1.25rem;
+}
+.contact-title .form-desc {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.5em;
+}
+.contact-title .form-title {
+  font-size: 1.75em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+}
+.contact-title .form-title .colored-form-title {
+  color: #dd5471;
+}
+
+.contact-form .form-input {
+  margin-bottom: 0.625rem;
+  font-size: 0.625em;
+  color: #828282;
+  border: 0.0625em solid #ccc;
+  text-align: left;
+}
+.contact-form .form-btn {
+  background-color: #dd5471;
+  border: 0.0625em solid #dd5471;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.contact-info {
+  margin-top: 1.875rem;
+}
+@media only screen and (min-width: 320px) {
+  .contact-info .email {
+    float: right;
+    display: grid;
+    grid-template-columns: 0 1.875em auto;
+  }
+  .contact-info .phone {
+    float: left;
+    display: grid;
+    grid-template-columns: 0 1.875em auto;
+  }
+  .contact-info .fax {
+    float: left;
+    display: grid;
+    grid-template-columns: 0 1.875em auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-info .email {
+    float: right;
+    width: 33.333%;
+    display: grid;
+    grid-template-columns: 0 1.875em auto;
+  }
+  .contact-info .phone {
+    float: left;
+    width: 33.333%;
+    display: grid;
+    grid-template-columns: 0 1.875em auto;
+  }
+  .contact-info .fax {
+    float: left;
+    width: 33.333%;
+    display: grid;
+    grid-template-columns: 0 1.875em auto;
+  }
+}
+.contact-info .icon {
+  width: 1em;
+  height: 1em;
+}
+.contact-info .title {
+  text-align: left;
+  font-size: 0.5em;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.contact-info .text {
+  text-align: left;
+  font-size: 0.5em;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #dd5471;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.map {
+  float: right;
+  margin-top: 3.125rem;
+  margin-right: 2.1875rem;
+}
+
+.map-img {
+  width: 16.875em;
+}/*# sourceMappingURL=ltr-app.css.map */
