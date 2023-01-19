@@ -1,6 +1,18 @@
 @import "variables";
 @import "functions";
 
+@mixin title-text {
+  font-size: em(28px);
+  font-family: $font;
+  font-weight: 700;
+}
+
+@mixin desc-text {
+  font-family: $font;
+  font-weight: 600;
+  font-size: em(8px);
+}
+
 @mixin button($color) {
   background-color: $primary-color;
   border: em(1px) solid $primary-color;

@@ -1,4 +1,4 @@
-.form-group, .contact-form .form-btn, .contact-form .form-input {
+.contact-form-style, .contact-form .contact-sendBtn, .contact-form .form-control {
   width: 100%;
   padding: 0.5rem 0.9375rem;
   margin: 0.5rem 0;
@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-.contact-grid-icon, .contact-info .icon {
+.contact-grid-icon, .contact-info .contact-info-icon {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-end: span 2;
@@ -27,7 +27,7 @@ body {
   background-attachment: fixed;
 }
 
-.container {
+main {
   width: 100%;
   height: 36.875em;
   display: flex;
@@ -38,7 +38,7 @@ body {
 }
 
 @media only screen and (min-width: 320px) {
-  .main {
+  section {
     width: 100%;
     margin: 0.625rem 1.5rem;
     border-radius: 3.125em;
@@ -47,9 +47,9 @@ body {
   }
 }
 @media only screen and (min-width: 992px) {
-  .main {
+  section {
     width: 100%;
-    margin: 3.75rem 15.625rem;
+    margin: 3.75rem 12.5rem;
     border-radius: 3.125em;
     background: linear-gradient(to left, white, white 75%, #183a4a 75%, #183a4a 75%);
     box-shadow: 0 7.5em 6.25em -5.625em rgba(25, 58, 75, 0.3);
@@ -58,35 +58,36 @@ body {
 .contact-us {
   width: 40%;
   padding: 3.125rem 4.6875rem;
+  padding-left: 0.3125rem;
   display: inline-block;
 }
 
-.contact-title {
+.contact-us-text {
   margin-bottom: 1.25rem;
 }
-.contact-title .form-desc {
+.contact-us-text .contact-us-desc {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 0.5em;
 }
-.contact-title .form-title {
+.contact-us-text .contact-us-title {
   font-size: 1.75em;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   margin-bottom: 0.625rem;
 }
-.contact-title .form-title .colored-form-title {
+.contact-us-text .contact-us-title .colored-form-title {
   color: #dd5471;
 }
 
-.contact-form .form-input {
+.contact-form .form-control {
   margin-bottom: 0.625rem;
   font-size: 0.625em;
   color: #828282;
   border: 0.0625em solid #ccc;
   text-align: right;
 }
-.contact-form .form-btn {
+.contact-form .contact-sendBtn {
   background-color: #dd5471;
   border: 0.0625em solid #dd5471;
   color: white;
@@ -97,9 +98,9 @@ body {
 .contact-info {
   margin-top: 1.875rem;
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 600px) {
   .contact-info .email {
-    float: left;
+    float: right;
     display: grid;
     grid-template-columns: 0 1.875em auto;
   }
@@ -134,11 +135,11 @@ body {
     grid-template-columns: 0 1.875em auto;
   }
 }
-.contact-info .icon {
+.contact-info .contact-info-icon {
   width: 1em;
   height: 1em;
 }
-.contact-info .title {
+.contact-info .contact-info-title {
   text-align: left;
   font-size: 0.5em;
   font-weight: 600;
@@ -147,7 +148,7 @@ body {
   letter-spacing: 0.02em;
   text-align: right;
 }
-.contact-info .text {
+.contact-info .contact-info-text {
   text-align: left;
   font-size: 0.5em;
   font-weight: 400;
@@ -160,9 +161,16 @@ body {
 .map {
   float: left;
   margin-top: 3.125rem;
-  margin-left: 2.1875rem;
+  margin-left: 3.125rem;
 }
 
 .map-img {
   width: 16.875em;
+}
+
+@media only screen and (max-width: 600px) {
+  .map {
+    float: right;
+    margin: 0 2.5rem;
+  }
 }/*# sourceMappingURL=rtl-app.css.map */
