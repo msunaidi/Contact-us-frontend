@@ -1,0 +1,13 @@
+@mixin alert-banner($bg-color) {
+  color: white;
+  text-align: center;
+  background-color: $bg-color;
+  padding: rem(20px) rem(10px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@mixin gradient-banner($degree, $first-color, $second-color) {
+  color: white;
+  text-align: center;
+  background: linear-gradient($degree, $first-color 0%, $second-color 100%);
+}

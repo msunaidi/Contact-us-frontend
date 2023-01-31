@@ -2,105 +2,520 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contact Us</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Right to Left Stylesheet   
-  <link rel="stylesheet" href="assets/css/rtl-app.css">-->
-  <!-- Left to Right Stylesheet      -->
-  <link rel="stylesheet" href="assets/css/ltr-app.css">
-
-
-  <script src="./main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Foneparts</title>
+    <link rel="stylesheet" href="./assets/css/ltr-app.css">
 </head>
 
 <body>
-  <main>
-    <section>
-      <div class="contact-us">
-        <div class="contact-us-text">
-          <h1 class="contact-us-title">Get in <span class="colored-form-title">Touch</span>
-          </h1>
-          <p class="contact-us-desc">Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel,
-            ornare
-            non
-            id blandit netus.
-          </p>
+
+    <header class="header">
+        <!--
+        <div class="nav nav-fil upper-navbar">
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <div class="col-1 upper-navbar-item nav-item">
+                        <a class="nav-link" href="#">Qualities</a>
+                    </div>
+                    <div class="col-1 upper-navbar-item nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </div>
+                    <div class="col upper-navbar-item text-start">
+                        <div class="row ">
+                            <div class="col-sm-8 text-end nav-item">
+                                <a class="nav-link" href="#">Create a business account and start ordering</a>
+                            </div>
+                            <div class="col-sm-1 nav-item">
+                                <a class="nav-link" href="#">Help</a>
+
+                            </div>
+                            <div class="col-sm-1 nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                            <div class="col-sm-2 nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-location-dot"></i>
+                                    <span>Netherlands</span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-
-        <div class="contact-form">
-          <form>
-            <div class="form-group">
-              <input id="name" class='form-control' type="text" placeholder="Name *">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-lg-5 px-lg-3">
+            <div class="container-fluid ">
+                <a class="navbar-brand text-primary" href="#">foneparts</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="nav container">hi</div>
+                    <div class="navbar container justify-content-center">
+                        <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Webshop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Wholesale</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Support</a>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline-secondary" type="submit">Login & Shop</button>
+                    </div>
+                </div>
             </div>
-            <div>
-              <input id="email" class='form-control' type="email" placeholder="Email">
+        </nav>
+    -->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
+            <div class="container-fluid  ps-0">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-column ml-lg-0 ml-3 align-items-lg-stretch"
+                    id="navbarCollapse">
+                    <div class="navbar-nav upper-navbar">
+                        <div class="container-fluid text-center">
+                            <div class="row">
+                                <div class="col-1 upper-navbar-item nav-item">
+                                    <a class="nav-link" href="#">Qualities</a>
+                                </div>
+                                <div class="col-1 upper-navbar-item nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </div>
+                                <div class="col upper-navbar-item text-start">
+                                    <div class="row ">
+                                        <div class="col-sm-8 text-end nav-item">
+                                            <a class="nav-link" href="#">Create a business account and start
+                                                ordering</a>
+                                        </div>
+                                        <div class="col-sm-1 nav-item">
+                                            <a class="nav-link" href="#">Help</a>
+
+                                        </div>
+                                        <div class="col-sm-1 nav-item">
+                                            <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-2 nav-item">
+                                            <a class="nav-link" href="#"><i class="fa-solid fa-location-dot"></i>
+                                                <span>Netherlands</span>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-nav main-navbar flex-row mb-2 py-lg-5 px-lg-3 justify-content-between">
+                        <a class="navbar-brand text-primary" href="#">foneparts</a>
+                        <ul class="navbar-nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Webshop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Wholesale</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Support</a>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline-secondary" type="submit">Login & Shop</button>
+
+                    </div>
+
+
+                </div>
             </div>
-            <div class="form-group">
-              <input id="phone" class='form-control required' type="tel" placeholder="Phone Number *">
+        </nav>
+    </header>
+    <main>
 
+
+
+        <section class="content">
+            <div class="alert-banner">All orders placed before 19:00 will be delivered tomorrow. <span
+                    class="fw-bolder">Free
+                    delivery.</span></div>
+
+
+            <div class="hero container-lg text-sm-start ms-lg-5 my-lg-5 my-sm-2">
+                <div class="row">
+                    <div class="col-lg-6"><small class="caption">Mobile parts wholesale that puts customer
+                            first</small>
+                        <h1 class="title my-3">Increasing your customer satisfaction with quality parts.</h1>
+                        <p class="subtitle fw-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius
+                            leo
+                            neque
+                            erat
+                            suspendisse ipsum
+                            pellentesque quam arcu,
+                            purus. Feugiat pellentesque fames sed tellus eget purus posuere.</p>
+                        <button type="button" class="btn btn-outline-secondary btn-lg my-4">Learn about <span
+                                class="fw-bold">benefits
+                                for working with us</span></button>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-              <select id="dropdown" class='form-control'>
-                <option value="" disabled selected>How did you find us?</option>
-                <option value="A"> Option A</option>
-                <option value="B"> Option B</option>
-                <option value="C"> Option C</option>
-              </select>
-            </div>
-            <button id="btn" class='contact-sendBtn' type="button" onclick="log()">SEND</button>
-          </form>
-        </div>
-
-        <div class="contact-info">
-          <div class="phone">
-            <svg class="contact-info-icon" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16.2047 0.424255V2.35269C18.1121 2.35269 19.899 2.8348 21.5655 3.79902C23.1516 4.74315 24.4165 6.00869 25.3602 7.59563C26.3239 9.26292 26.8058 11.0507 26.8058 12.9591H28.7332C28.7332 10.6892 28.161 8.57994 27.0166 6.63141C25.9123 4.74315 24.4165 3.2466 22.5292 2.14177C20.5817 0.99676 18.4735 0.424255 16.2047 0.424255ZM6.23617 3.31691C5.69408 3.31691 5.22225 3.48766 4.8207 3.82915L1.71869 6.99299L1.80904 6.93273C1.3071 7.35458 0.975821 7.87686 0.815199 8.49959C0.674655 9.12231 0.714811 9.72495 0.935665 10.3075C1.49784 11.8743 2.25075 13.4814 3.1944 15.1286C4.51953 17.3985 6.09563 19.4374 7.9227 21.2453C10.854 24.1983 14.4981 26.5285 18.855 28.2359H18.8851C19.4674 28.4368 20.0496 28.477 20.6319 28.3565C21.2342 28.2359 21.7663 27.9748 22.228 27.573L25.2698 24.5297C25.6714 24.128 25.8721 23.6358 25.8721 23.0533C25.8721 22.4506 25.6714 21.9484 25.2698 21.5467L21.3246 17.5693C20.923 17.1675 20.4211 16.9666 19.8187 16.9666C19.2164 16.9666 18.7145 17.1675 18.3129 17.5693L16.4156 19.4977C14.8897 18.7745 13.5645 17.8806 12.4402 16.816C11.3158 15.7312 10.4224 14.4155 9.75981 12.8687L11.6873 10.9403C12.1089 10.4983 12.3197 9.97604 12.3197 9.37341C12.3197 8.75068 12.0788 8.24849 11.5969 7.86682L11.6873 7.95721L7.65165 3.82915C7.2501 3.48766 6.77827 3.31691 6.23617 3.31691ZM16.2047 4.28113V6.20957C17.4295 6.20957 18.5538 6.51088 19.5778 7.11352C20.6218 7.71616 21.445 8.53976 22.0473 9.58433C22.6497 10.6088 22.9508 11.7337 22.9508 12.9591H24.8783C24.8783 11.3922 24.4868 9.93587 23.7038 8.58998C22.9207 7.28427 21.8767 6.2397 20.5716 5.45627C19.2264 4.67284 17.7708 4.28113 16.2047 4.28113ZM6.23617 5.24535C6.29641 5.24535 6.36668 5.27548 6.44699 5.33574L10.3923 9.37341C10.4123 9.45376 10.3923 9.52407 10.332 9.58433L7.47095 12.4167L7.68177 13.0194L8.07328 13.8631C8.39452 14.546 8.76596 15.2089 9.18759 15.8518C9.76985 16.7557 10.4123 17.5291 11.115 18.1719C12.0587 19.0959 13.1931 19.9396 14.5182 20.703C15.1808 21.0846 15.743 21.3659 16.2047 21.5467L16.8071 21.8179L19.7284 18.8951C19.7685 18.8549 19.7986 18.8348 19.8187 18.8348C19.8388 18.8348 19.8689 18.8549 19.9091 18.8951L23.9748 22.9629C24.015 23.003 24.035 23.0332 24.035 23.0533C24.035 23.0533 24.015 23.0733 23.9748 23.1135L20.9632 26.0966C20.5214 26.4782 20.0396 26.5787 19.5176 26.3979C15.4217 24.8109 12.0085 22.6415 9.27794 19.8894C7.59142 18.202 6.11571 16.2836 4.85081 14.1342C3.94732 12.5875 3.2446 11.0909 2.74266 9.64459V9.61446C2.66235 9.43367 2.65231 9.22275 2.71254 8.98169C2.77277 8.72055 2.8832 8.51967 3.04382 8.37906L6.02536 5.33574C6.08559 5.27548 6.15586 5.24535 6.23617 5.24535ZM16.2047 8.138V10.0664C17.0078 10.0664 17.6905 10.3477 18.2527 10.9101C18.8148 11.4726 19.0959 12.1556 19.0959 12.9591H21.0234C21.0234 12.0953 20.8025 11.2918 20.3608 10.5485C19.9392 9.8053 19.3569 9.22275 18.6141 8.8009C17.8712 8.35897 17.0681 8.138 16.2047 8.138Z"
-                fill="black" />
-            </svg>
-            <div class="contact-info-title">PHONE</div>
-            <div class="contact-info-text">03 5432 1234</div>
-          </div>
-          <div class="fax">
-            <div class="contact-info-icon">
-              <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M10.0625 1.64062V6.5625H8.09375V4.59375H2.1875V22.3125H4.15625V23.2969C4.15625 24.0967 4.44336 24.7837 5.01758 25.3579C5.6123 25.9526 6.30957 26.25 7.10938 26.25C7.90918 26.25 8.59619 25.9526 9.17041 25.3579C9.76514 24.7837 10.0625 24.0967 10.0625 23.2969V22.3125H25.8125V6.5625H21.875V1.64062H10.0625ZM12.0312 3.60938H19.9062V8.53125H12.0312V3.60938ZM4.15625 6.5625H6.125V20.3438H4.15625V6.5625ZM8.09375 8.53125H10.0625V10.5H21.875V8.53125H23.8438V20.3438H8.09375V8.53125ZM11.0469 12.4688V14.4375H13.0156V12.4688H11.0469ZM14.9844 12.4688V14.4375H16.9531V12.4688H14.9844ZM18.9219 12.4688V14.4375H20.8906V12.4688H18.9219ZM11.0469 16.4062V18.375H13.0156V16.4062H11.0469ZM14.9844 16.4062V18.375H16.9531V16.4062H14.9844ZM18.9219 16.4062V18.375H20.8906V16.4062H18.9219ZM6.125 22.3125H8.09375V23.2969C8.09375 23.5635 7.99121 23.7993 7.78613 24.0044C7.60156 24.189 7.37598 24.2812 7.10938 24.2812C6.84277 24.2812 6.60693 24.189 6.40186 24.0044C6.21729 23.7993 6.125 23.5635 6.125 23.2969V22.3125Z"
-                  fill="black" />
-              </svg>
+            <div class="container-fluid gradient-banner d-flex align-items-center justify-content-center">
+                <div class="striped">
+                    <h1 class="display-6 fw-semibold banner-text">Driven by <span class="fw-bolder">Excellence.</span>
+                    </h1>
+                </div>
             </div>
 
-            <div class="contact-info-title">FAX</div>
-            <div class="contact-info-text">03 5432 1234</div>
-          </div>
-          <div class="email">
-            <div class="contact-info-icon">
-              <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M7.95455 2.625V4.59624L1.75 8.63565V25.375H26.5682V8.63565L20.3636 4.59624V2.625H7.95455ZM10.0227 4.69318H18.2955V12.6428L14.1591 15.3249L10.0227 12.6428V4.69318ZM11.0568 6.76136V8.82955H17.2614V6.76136H11.0568ZM7.95455 7.0522V11.2855L4.6907 9.18501L7.95455 7.0522ZM20.3636 7.0522L23.6275 9.18501L20.3636 11.2855V7.0522ZM11.0568 9.86364V11.9318H17.2614V9.86364H11.0568ZM3.81818 11.0916L14.1591 17.7809L24.5 11.0916V23.3068H3.81818V11.0916Z"
-                  fill="black" />
-              </svg>
-            </div>
-            <div class="contact-info-title">EMAIL</div>
-            <div class="contact-info-text">info@marcc.com.au</div>
-          </div>
-        </div>
-      </div>
+            <section class="container sale py-5 px-0">
+                <div class="container row pb-3">
+                    <div class="col-6 sale-label">Top Sales This Week
+                        <h2 class="fw-bold sale-title">Sale</h2>
+                    </div>
+                    <div class="col-6 allProducts">
+                        <a href="#" class="allProducts-link">View all products on sale
+                            <i class="fa-solid fa-arrow-right allProducts-icon"></i></a>
+                    </div>
+                </div>
+                <div class="container product-list">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-3 ps-0">
+                            <div class="card productCard">
+                                <ul class="text-start list-group list-group-flush pe-0">
+                                    <li class="list-group-item product">
+                                        <div class="productCard-top">
+                                            <img src="assets/img/Huawei LCD Test 1.png" class="card-img-top product-img"
+                                                alt="Huawei LCD">
+                                            <span class="product-badge-oem badge">
+                                                OEM</span>
+                                        </div>
 
-      <div class="map">
-        <img class="map-img" src="assets/img/map.png">
-      </div>
-    </section>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="productCard-details mt-3">
+                                            <p class="h5 productCard-details-title">Huawei P20 Lite</p>
+                                            <p class="productCard-details-desc">Display Assembly Complete with Housing
+                                                and
+                                                Battery</p>
+                                            <div class="row">
+                                                <div class="col-2 px-0 productCard-details-price text-center">
+                                                    <span class="fw-bold">€59</span>
+                                                </div>
+                                                <div class="col-1 px-0">
+                                                    <hr class="">
+                                                </div>
+                                                <div class="col-4 px-0 productCard-details-colors text-center">
+                                                    <a href="#"><i
+                                                            class="fa-solid fa-circle fa-sm circle-black"></i></a>
+                                                    <a href="#"><i class="fa-solid fa-circle fa-sm circle-blue"></i></a>
+                                                    <a href="#"><i class="fa-solid fa-circle fa-sm circle-pink"></i></a>
+                                                    <a href="#"><i class="fa-solid fa-circle fa-sm circle-gold"></i></a>
+                                                </div>
+                                                <div class="col-1 px-0">
+                                                    <hr class="">
+                                                </div>
+                                                <div class="col-3 px-0 productCard-details-inStock text-center">
+                                                    <i class="fa-solid fa-circle-check fa-sm inStock-icon"></i>
+                                                    <span class="inStock-status ml-2 pb-sm-1">In stock</span>
+                                                </div>
+                                            </div>
 
-  </main>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="productCard-options">
+                                            <div class="row">
+                                                <div class="col-6 text-start ps-1">
+                                                    <div class="input-group inline-group px-0">
+                                                        <div class="input-group-prepend">
+                                                            <button class="btn btn-secondary btn-minus px-1 py-0">
+                                                                <i class="fa fa-minus"></i>
+                                                            </button>
+                                                        </div>
+                                                        <input class="form-control rounded quantity py-0 px-0 mx-2"
+                                                            min="0" name="quantity" value="25" type="number" disabled>
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-secondary btn-plus px-1 py-0">
+                                                                <i class="fa fa-plus"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
+                                                <div class="col-6 cartAdd pt-2 text-end">
+                                                    <button type="button" class="btn cartAdd-btn btn-sm">
+                                                        <i class="fa-solid fa-cart-plus fa-sm"></i>
+                                                        <span class="cartAdd-btn-text">Add to cart</span>
+                                                    </button>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3 ps-0">
+                            <div class="card productCard">
+                                <ul class="text-start list-group list-group-flush pe-0">
+                                    <li class="list-group-item product">
+                                        <div class="productCard-top">
+                                            <img src="assets/img/Huawei LCD Test 1.png" class="card-img-top product-img"
+                                                alt="Huawei LCD">
+                                            <span class="product-badge-hcopy badge">
+                                                HIGH COPY</span>
+                                        </div>
+
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="productCard-details mt-3">
+                                            <p class="h5 productCard-details-title">Huawei P20 Lite</p>
+                                            <p class="productCard-details-desc">Display Assembly Complete with Housing
+                                                and
+                                                Battery</p>
+                                            <div class="row">
+                                                <div class="col-2 px-0 productCard-details-price text-center">
+                                                    <span class="fw-bold">€59</span>
+                                                </div>
+                                                <div class="col-1 px-0">
+                                                    <hr class="">
+                                                </div>
+                                                <div class="col-4 px-0 productCard-details-colors text-center">
+                                                    <a href="#"><i
+                                                            class="fa-solid fa-circle fa-sm circle-black"></i></a>
+                                                    <a href="#"><i class="fa-solid fa-circle fa-sm circle-blue"></i></a>
+                                                    <a href="#"><i class="fa-solid fa-circle fa-sm circle-pink"></i></a>
+                                                    <a href="#"><i class="fa-solid fa-circle fa-sm circle-gold"></i></a>
+                                                </div>
+                                                <div class="col-1 px-0">
+                                                    <hr class="">
+                                                </div>
+                                                <div class="col-3 px-0 productCard-details-inStock text-center">
+                                                    <i class="fa-solid fa-circle-check fa-sm inStock-icon"></i>
+                                                    <span class="inStock-status ml-2 pb-sm-1">In stock</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="productCard-options">
+                                            <div class="row">
+                                                <div class="col-6 text-start ps-1">
+                                                    <div class="input-group inline-group px-0">
+                                                        <div class="input-group-prepend">
+                                                            <button class="btn btn-secondary btn-minus px-1 py-0">
+                                                                <i class="fa fa-minus"></i>
+                                                            </button>
+                                                        </div>
+                                                        <input class="form-control rounded quantity py-0 px-0 mx-2"
+                                                            min="0" name="quantity" value="25" type="number" disabled>
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-secondary btn-plus px-1 py-0">
+                                                                <i class="fa fa-plus"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 cartAdd pt-2 text-end">
+                                                    <button type="button" class="btn cartAdd-btn btn-sm">
+                                                        <i class="fa-solid fa-cart-plus fa-sm"></i>
+                                                        <span class="cartAdd-btn-text">Add to cart</span>
+                                                    </button>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-3 ps-0">
+                            <div class="card productCard">
+                                <ul class="text-start list-group list-group-flush pe-0">
+                                    <li class="list-group-item product">
+                                        <div class="productCard-top">
+                                            <img src="assets/img/Huawei LCD Test 1.png" class="card-img-top product-img"
+                                                alt="Huawei LCD">
+                                            <span class="product-badge-oem badge">
+                                                OEM</span>
+                                        </div>
+
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="productCard-details mt-3">
+                                            <p class="h5 productCard-details-title">Huawei P20 Lite</p>
+                                            <p class="productCard-details-desc">Display Assembly Complete with Housing
+                                                and
+                                                Battery</p>
+                                            <div class="row">
+                                                <div class="col-2 px-0 productCard-details-price text-center">
+                                                    <span class="fw-bold">€59</span>
+                                                </div>
+                                                <div class="col-1 px-0">
+                                                    <hr class="">
+                                                </div>
+                                                <div class="col-4 px-0 productCard-details-colors text-center">
+                                                    <a href="#"><i
+                                                            class="fa-solid fa-circle fa-sm circle-black"></i></a>
+                                                    <a href="#"><i class="fa-solid fa-circle fa-sm circle-blue"></i></a>
+                                                    <a href="#"><i class="fa-solid fa-circle fa-sm circle-pink"></i></a>
+                                                    <a href="#"><i class="fa-solid fa-circle fa-sm circle-gold"></i></a>
+                                                </div>
+                                                <div class="col-1 px-0">
+                                                    <hr class="">
+                                                </div>
+                                                <div class="col-3 px-0 productCard-details-inStock text-center">
+                                                    <i class="fa-solid fa-circle-check fa-sm inStock-icon"></i>
+                                                    <span class="inStock-status ml-2 pb-sm-1">In stock</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="productCard-options">
+                                            <div class="row">
+                                                <div class="col-6 text-start ps-1">
+                                                    <div class="input-group inline-group px-0">
+                                                        <div class="input-group-prepend">
+                                                            <button class="btn btn-secondary btn-minus px-1 py-0">
+                                                                <i class="fa fa-minus"></i>
+                                                            </button>
+                                                        </div>
+                                                        <input class="form-control rounded quantity py-0 px-0 mx-2"
+                                                            min="0" name="quantity" value="25" type="number" disabled>
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-secondary btn-plus px-1 py-0">
+                                                                <i class="fa fa-plus"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 cartAdd pt-2 text-end">
+                                                    <button type="button" class="btn cartAdd-btn btn-sm">
+                                                        <i class="fa-solid fa-cart-plus fa-sm"></i>
+                                                        <span class="cartAdd-btn-text">Add to cart</span>
+                                                    </button>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-3 ps-0">
+                            <div class="card productCard">
+                                <ul class="text-start list-group list-group-flush pe-0">
+                                    <li class="list-group-item product">
+                                        <div class="productCard-top">
+                                            <img src="assets/img/Huawei LCD Test 1.png" class="card-img-top product-img"
+                                                alt="Huawei LCD">
+                                            <span class="product-badge-refurb badge">
+                                                REFURBISHED</span>
+                                        </div>
+
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="productCard-details mt-3">
+                                            <p class="h5 productCard-details-title">Huawei P20 Lite</p>
+                                            <p class="productCard-details-desc">Display Assembly Complete with Housing
+                                                and
+                                                Battery</p>
+                                            <div class="row">
+                                                <div class="col-2 px-0 productCard-details-price text-center">
+                                                    <span class="fw-bold">€59</span>
+                                                </div>
+                                                <div class="col-1 px-0">
+                                                    <hr class="">
+                                                </div>
+                                                <div class="col-4 px-0 productCard-details-colors text-center">
+                                                    <a href="#"><i
+                                                            class="fa-solid fa-circle fa-sm circle-black"></i></a>
+                                                    <a href="#"><i class="fa-solid fa-circle fa-sm circle-blue"></i></a>
+                                                    <a href="#"><i class="fa-solid fa-circle fa-sm circle-pink"></i></a>
+                                                    <a href="#"><i class="fa-solid fa-circle fa-sm circle-gold"></i></a>
+                                                </div>
+                                                <div class="col-1 px-0">
+                                                    <hr class="">
+                                                </div>
+                                                <div class="col-3 px-0 productCard-details-inStock text-center">
+                                                    <i class="fa-solid fa-circle-check fa-sm inStock-icon"></i>
+                                                    <span class="inStock-status ml-2 pb-sm-1">In stock</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="productCard-options">
+                                            <div class="row">
+                                                <div class="col-6 text-start ps-1">
+                                                    <div class="input-group inline-group px-0">
+                                                        <div class="input-group-prepend">
+                                                            <button class="btn btn-secondary btn-minus px-1 py-0">
+                                                                <i class="fa fa-minus"></i>
+                                                            </button>
+                                                        </div>
+                                                        <input class="form-control rounded quantity py-0 px-0 mx-2"
+                                                            min="0" name="quantity" value="25" type="number" disabled>
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-secondary btn-plus px-1 py-0">
+                                                                <i class="fa fa-plus"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 cartAdd pt-2 text-end">
+                                                    <button type="button" class="btn cartAdd-btn btn-sm">
+                                                        <i class="fa-solid fa-cart-plus fa-sm"></i>
+                                                        <span class="cartAdd-btn-text">Add to cart</span>
+                                                    </button>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+        </section>
+
+    </main>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,77 @@
+.card-badge {
+  position: absolute;
+  top: 0;
+  #{$default-float}: 0;
+  #{$opposite-float}: 63.93%;
+  padding: rem(7px) rem(9px);
+  border-radius: 0;
+  border-bottom-#{$opposite-float}-radius: rem(5px);
+  text-align: $default-float;
+}
+
+.productCard {
+  filter: drop-shadow(1px 2px 3px #c7c7c7);
+  background: linear-gradient(
+    217.79deg,
+    #fdfdfd 0.01%,
+    rgba(255, 255, 255, 0.98) 100.01%
+  );
+  border-radius: 10px;
+
+  &-top {
+    .product-img {
+      display: inline-block; /* keeps the img with the badge if the img is forced to a new line */
+      position: relative;
+      margin-bottom: 5px;
+    }
+
+    .product-badge-oem {
+      @extend .card-badge;
+      background: linear-gradient(92.96deg, #2b5e7a 0.31%, #508fc9 97.32%);
+    }
+
+    .product-badge-hcopy {
+      @extend .card-badge;
+      background: linear-gradient(92.96deg, #61ac2f 0.31%, #78ba4d 97.32%);
+    }
+
+    .product-badge-refurb {
+      @extend .card-badge;
+      background: linear-gradient(92.96deg, #63539e 0.31%, #8f7ecd 97.32%);
+    }
+  }
+
+  &-details {
+    &-colors {
+      .circle-black {
+        color: #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+      .circle-blue {
+        color: #1746be;
+      }
+      .circle-pink {
+        color: #f092cd;
+      }
+      .circle-gold {
+        color: #dead00;
+      }
+    }
+    &-inStock {
+      .inStock-icon {
+        color: #25cc09;
+      }
+      .inStock-status {
+        font-weight: 400;
+        font-size: em(9px);
+        color: #9c9c9c;
+      }
+    }
+  }
+}
+
+.cartAdd {
+  &-btn {
+    @include btn-light;
+  }
+}
