@@ -1,0 +1,10 @@
+// HERO
+.hero {
+  color: $primary-text;
+  .caption {
+    color: $light-text;
+  }
+  .btn {
+    border-width: rem(2px);
+  }
+}

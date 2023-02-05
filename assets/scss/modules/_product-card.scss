@@ -7,9 +7,12 @@
   border-radius: 0;
   border-bottom-#{$opposite-float}-radius: rem(5px);
   text-align: $default-float;
+  font-size: rem(10px);
 }
 
 .productCard {
+  width: 18rem;
+  margin-bottom: rem(20px);
   filter: drop-shadow(1px 2px 3px #c7c7c7);
   background: linear-gradient(
     217.79deg,
@@ -43,9 +46,15 @@
 
   &-details {
     &-colors {
+      .color-btn {
+        padding: 0;
+        background: transparent;
+        border: none;
+        border-radius: 50%;
+      }
       .circle-black {
         color: #000000;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.75);
       }
       .circle-blue {
         color: #1746be;
@@ -64,14 +73,21 @@
       .inStock-status {
         font-weight: 400;
         font-size: em(9px);
-        color: #9c9c9c;
+        color: $gray3;
       }
     }
   }
-}
 
-.cartAdd {
-  &-btn {
-    @include btn-light;
+  &-options {
+    .btn-quantity {
+      background-color: $gray1;
+      border-color: $gray1;
+    }
+
+    .cartAdd {
+      &-btn {
+        @include btn-light;
+      }
+    }
   }
 }

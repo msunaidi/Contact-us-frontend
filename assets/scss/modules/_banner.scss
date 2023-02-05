@@ -1,0 +1,29 @@
+// BANNER
+.alert-banner {
+  @include alert-banner($primary);
+}
+
+.gradient-banner {
+  @include gradient-banner(270.57deg, #2b5e7a, #6ca7b6);
+  .striped {
+    width: max-content;
+    background: linear-gradient(
+      -45deg,
+      transparent 30%,
+      #6ca7b6 30% 30.25%,
+      transparent 30.25% 40%,
+      #6ca7b6 40% 40.25%,
+      transparent 40.25% 50%,
+      #6ca7b6 50% 50.5%,
+      transparent 50.25% 60%,
+      #6ca7b6 60% 60.25%,
+      transparent 60.25% 70%,
+      #6ca7b6 70% 70.25%,
+      transparent 70.25%
+    );
+  }
+
+  .banner-text {
+    padding: rem(20px) rem(50px);
+  }
+}

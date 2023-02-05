@@ -1,0 +1,18 @@
+//sale section
+.sale {
+  &-label {
+    color: $gray2;
+  }
+
+  &-title {
+    color: $primary-text;
+  }
+
+  .allProducts {
+    text-align: $opposite-float;
+    &-link {
+      color: $gray2;
+      text-decoration: none;
+    }
+  }
+}

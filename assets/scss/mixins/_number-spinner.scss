@@ -2,10 +2,12 @@
   max-width: 7rem;
   padding: 0.5rem;
   .form-control {
+    width: 25%;
+    flex: none;
     text-align: center;
     font-weight: 900;
     font-size: em(14px);
-    color: $secondary-text;
+    color: $gray1;
     background: #eff2f7;
     border: none;
   }
