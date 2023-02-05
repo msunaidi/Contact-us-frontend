@@ -10876,6 +10876,9 @@ textarea.form-control-lg {
 .productCard-top .product-badge-refurb {
   background: linear-gradient(92.96deg, #63539e 0.31%, #8f7ecd 97.32%);
 }
+.productCard-details-desc {
+  font-size: 14px;
+}
 .productCard-details-colors .color-btn {
   padding: 0;
   background: transparent;
@@ -10906,6 +10909,8 @@ textarea.form-control-lg {
 .productCard-options .btn-quantity {
   background-color: #797979;
   border-color: #797979;
+  border-radius: 0.4375rem;
+  line-height: 1rem;
 }
 .productCard-options .cartAdd-btn {
   --bs-btn-color: white;
@@ -10922,6 +10927,15 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #000000;
   --bs-btn-disabled-bg: #6ca7b6;
   --bs-btn-disabled-border-color: #6ca7b6;
+  width: 80%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 0;
+  font-size: 0.625rem;
+  font-weight: 600;
 }
 
 .hero {
